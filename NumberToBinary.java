@@ -1,9 +1,9 @@
-package x;
+package numbertobinary;
 // número a binario de 8bits @HeberArratia 
 
 import javax.swing.JOptionPane;
 
-public class x {
+public class NumberToBinary {
 
     public static void main(String[] args) {
         boolean comprobar = true;
