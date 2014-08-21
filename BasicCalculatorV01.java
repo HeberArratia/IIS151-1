@@ -50,7 +50,7 @@ public class BasicCalculator {
                 case 6:
                     a = dato("el");
                     b = dato("porsentaje del");
-                    porsentaje(a, b);
+                    porcentaje(a, b);
                     break;
                 case 7:
                     ejecuta = false;
@@ -65,11 +65,11 @@ public class BasicCalculator {
         boolean comprobar = false;
         while (!comprobar) {
          try {
-        String captura = JOptionPane.showInputDialog("Ingrese " + variable + " numero ");
+        String captura = JOptionPane.showInputDialog("Ingrese " + variable + " número ");
         a = Double.parseDouble(captura);
         comprobar = true;
          } catch (NumberFormatException nfe) {
-             JOptionPane.showMessageDialog(null, "No se ingreso opción válida");
+             JOptionPane.showMessageDialog(null, "Valor incorrecto!!");
          }
         }
         return a;
@@ -84,11 +84,11 @@ public class BasicCalculator {
     }
     public static void multiplicacion(double a, double b) {
         double c = a * b;
-        JOptionPane.showMessageDialog(null, "La multiplicacion es: " + c);
+        JOptionPane.showMessageDialog(null, "La multiplicación es: " + c);
     }
     public static void division(double a, double b) {
         double c = a / b;
-        JOptionPane.showMessageDialog(null, "La division es: " + c);
+        JOptionPane.showMessageDialog(null, "La división es: " + c);
     }
     public static void mayor(double a, double b) {
         double mayor = a;
@@ -98,10 +98,10 @@ public class BasicCalculator {
         if (a == b) {
             JOptionPane.showMessageDialog(null, "Son iguales");
         } else {
-            JOptionPane.showMessageDialog(null, "El numero mayor es: " + mayor);
+            JOptionPane.showMessageDialog(null, "El número mayor es: " + mayor);
         }
     }
-    public static void porsentaje(double a, double b) {
+    public static void porcentaje(double a, double b) {
         double c = a * b / 100;
         JOptionPane.showMessageDialog(null, "El prociento es:  " + c + "%");
     }
