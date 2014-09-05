@@ -1,7 +1,7 @@
-package ejercicioitinerario;
+package ejercicioitinerarioheberarratia;
 import javax.swing.JOptionPane;
-public class EjercicioItinerario {
-//@HeberArratia
+// @HeberArratia
+public class HeberArratiaEjercicioItinerario {
 	public static void main(String[] args) {
 	     preguntarCiudades();
 	    }
